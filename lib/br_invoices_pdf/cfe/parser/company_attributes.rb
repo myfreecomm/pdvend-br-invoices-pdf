@@ -23,7 +23,7 @@ module BrInvoicesPdf
             address: company_address_params(xml),
             trading_name: locate_element(xml, 'infCFe/emit/xFant'),
             zipcode: locate_element(xml, 'infCFe/emit/enderEmit/CEP'),
-            cnpj: locate_element(xml, 'infCFe/ide/CNPJ'),
+            cnpj: locate_element(xml, 'infCFe/emit/CNPJ'),
             ie: locate_element(xml, 'infCFe/emit/IE'),
             im: locate_element(xml, 'infCFe/emit/IM')
           }
